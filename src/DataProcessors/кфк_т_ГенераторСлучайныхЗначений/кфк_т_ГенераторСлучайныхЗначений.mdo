@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a6f016e-9682-4d15-b8bb-8851d396bb64">
+  <producedTypes>
+    <objectType typeId="5afa2aff-1fd7-408e-a3f9-dae39cc85f03" valueTypeId="1f6ddc05-9acd-4fe5-8576-c2e5f243a697"/>
+    <managerType typeId="ab6c4e20-0f59-461a-a143-cf006b244dbd" valueTypeId="bf72f46d-3701-4944-93e9-220e464730b1"/>
+  </producedTypes>
+  <name>кфк_т_ГенераторСлучайныхЗначений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Генератор случайных значений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:DataProcessor>

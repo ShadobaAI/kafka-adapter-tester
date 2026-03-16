@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="775c23b4-45a4-4f44-90c4-ca5a91f88482">
+  <producedTypes>
+    <refType typeId="258bc9c2-b8a9-46bc-bc2e-96a427cf4e2f" valueTypeId="53ac5b15-becd-4401-91e3-aaaff7ac2d42"/>
+    <listType typeId="f0b918aa-1915-441d-a8d9-9101ec459fd0" valueTypeId="2583739b-f60e-4450-a8d1-c3e042b4a0f5"/>
+    <managerType typeId="6d2201e7-88f2-4e4d-b3c6-fae450f3eded" valueTypeId="2a532ec4-387c-4651-889c-bf3f5c674c5b"/>
+  </producedTypes>
+  <name>кфк_т_ТестовоеПеречисление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестовое перечисление</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a4802366-80d8-4680-a748-529f995f2172">
+    <name>Значение1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение1</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="34dcc2ef-fc3d-4f1e-a80a-b3c5092fa075">
+    <name>Значение2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0917a98c-cd24-4909-8e4d-acc7f8e3b8bf">
+    <name>Значение3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение3</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="27807666-b5c4-43b5-9402-c4c60367786e">
+  <name>ТестированиеАдаптераKafka</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование адаптера kafka</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <compatibilityMode>Checked</compatibilityMode>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="f38bcfa8-e755-4de1-9012-3f4a16060148"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="bb26ba3d-0d26-4ffd-92d2-2196154d9a51"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="5d3b1dfe-a3e8-4015-8379-99a9500e9c09"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="f9473bd5-94e8-4610-8c00-bdcbd8d8546c"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="dd0e1cec-2e56-4c67-a37d-9b146e88d2ae"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="d32223bf-7467-4d98-b983-683870098de0"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="f64b10fb-a38c-4b77-9060-c3ea3a686a6f"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>кфк_т_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.21</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>ООО &quot;ФСК ЛАБ&quot;</vendor>
+  <version>9.9.9.9</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.21</compatibilityMode>
+  <languages uuid="cc43f879-4102-40db-8161-f67cdcf8a5c8">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.кфк_т_ТестовыеДанные</subsystems>
+  <commonModules>CommonModule.кфк_т_МенеджерОбменаЧерезУниверсальныйФормат</commonModules>
+  <commonModules>CommonModule.кфк_т_ТестовыеДанные</commonModules>
+  <commonModules>CommonModule.ОбновлениеИнформационнойБазыKafka</commonModules>
+  <xDTOPackages>XDTOPackage.кфк_т_ФорматОбмена</xDTOPackages>
+  <catalogs>Catalog.кфк_т_ТестовыйСправочник</catalogs>
+  <enums>Enum.кфк_т_ТестовоеПеречисление</enums>
+  <dataProcessors>DataProcessor.кфк_т_ГенераторСлучайныхЗначений</dataProcessors>
+  <informationRegisters>InformationRegister.кфк_т_ТестовыйРегистр</informationRegisters>
+</mdclass:Configuration>

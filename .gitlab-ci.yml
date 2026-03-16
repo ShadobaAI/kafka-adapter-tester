@@ -1,0 +1,53 @@
+stages:
+  - build
+  - deploy
+
+default:
+  before_script:
+    - chcp 65001
+
+build:
+  stage: build
+  script:
+    # check CI_COMMIT_TAG
+    - |
+      if (-not ($CI_COMMIT_TAG -match '^\d+\.\d+\.\d+\.\d+$')) {
+        Write-Error 'Неправильный формат версии! Ожидается: X.X.X.X (например, 3.0.1.156). Получено: $CI_COMMIT_TAG'
+      }
+    # SET Version
+    - (Get-Content $CI_PROJECT_DIR\src\Configuration\Configuration.mdo -Encoding UTF8 -Raw).Replace('9.9.9.9', $CI_COMMIT_TAG) | Set-Content $CI_PROJECT_DIR\src\Configuration\Configuration.mdo -Encoding UTF8
+    # MOVE PROJECT TO NEW DIR
+    - New-Item -ItemType Directory -Force -Path "project" | Out-Null
+    - Move-Item "$CI_PROJECT_DIR\.project", "$CI_PROJECT_DIR\.settings\", "$CI_PROJECT_DIR\DT-INF\", "$CI_PROJECT_DIR\src\" "project"
+    # EDT to ZIP (CFE)
+    - Compress-Archive "$CI_PROJECT_DIR\project\*" edt.zip -Force
+    # EDT to XML
+    - 1cedtcli -data $CI_PROJECT_DIR\tmp -vmargs -Xmx2g -command export --project $CI_PROJECT_DIR\project --configuration-files $CI_PROJECT_DIR\xml
+    # XML to CFE
+    - vrunner compileexttocfe -s $CI_PROJECT_DIR\xml -o $CI_PROJECT_DIR\config.cfe --ibcmd
+  rules:
+    - if: $CI_COMMIT_TAG
+  artifacts:
+    paths:
+      - config.cfe
+      - edt.zip
+    expire_in: 1 h
+
+deploy:
+  stage: deploy
+  needs:
+    - build
+  variables:
+    PROJECT_URL: https://$CI_SERVER_HOST/api/v4/projects/$CI_PROJECT_ID # CI_API_V4_URL
+    RELEASE_URL: $PROJECT_URL/releases/$CI_COMMIT_TAG/assets/links
+    PACKAGE_URI: $PROJECT_URL/packages/generic/kafka-adapter-tester-v$CI_COMMIT_TAG/$CI_COMMIT_TAG/kafka_adapter_tester_v$CI_COMMIT_TAG
+  script:
+    # PUSH to packages
+    - Invoke-WebRequest -Headers @{ 'JOB-TOKEN'=$CI_JOB_TOKEN } -Uri "$PACKAGE_URI.cfe" -Method Put -Infile $CI_PROJECT_DIR\config.cfe
+    - Invoke-WebRequest -Headers @{ 'JOB-TOKEN'=$CI_JOB_TOKEN } -Uri "${PACKAGE_URI}_edt.zip" -Method Put -Infile $CI_PROJECT_DIR\edt.zip
+    # ADD to release
+    - Invoke-WebRequest -Headers @{ 'JOB-TOKEN'=$CI_JOB_TOKEN } -Uri $RELEASE_URL -Method POST -Body @{"name"="Адаптер Kafka - Тестер v${CI_COMMIT_TAG}.cfe";"link_type"="package";"url"="${PACKAGE_URI}.cfe"}
+    - Invoke-WebRequest -Headers @{ 'JOB-TOKEN'=$CI_JOB_TOKEN } -Uri $RELEASE_URL -Method POST -Body @{"name"="Адаптер Kafka - Тестер v${CI_COMMIT_TAG} (cfe).zip";"link_type"="package";"url"="${PACKAGE_URI}_edt.zip"}
+  rules:
+    - if: $CI_COMMIT_TAG
+  
