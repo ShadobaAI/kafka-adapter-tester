@@ -1,7 +1,7 @@
 # 1С: Адаптер Kafka — Тестер
 
 ![Платформа](https://img.shields.io/badge/1С-8.3.21+-blue)
-![EDT](https://img.shields.io/badge/EDT-2025.2.3+-blue)
+![EDT](https://img.shields.io/badge/EDT-2025.2+-blue)
 
 Тестовое расширение конфигурации с примерами использования API и сценариями отладки интеграции для [1С: Адаптер Kafka](https://github.com/ShadobaAI/kafka-adapter).
 
