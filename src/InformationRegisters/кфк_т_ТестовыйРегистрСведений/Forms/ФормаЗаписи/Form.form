@@ -360,7 +360,7 @@
     <name>Запись</name>
     <id>1</id>
     <valueType>
-      <types>InformationRegisterRecordManager.кфк_т_ТестовыйРегистр</types>
+      <types>InformationRegisterRecordManager.кфк_т_ТестовыйРегистрСведений</types>
     </valueType>
     <view>
       <common>true</common>

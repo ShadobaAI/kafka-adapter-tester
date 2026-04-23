@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0ee6d1f-a336-4a4b-bec1-44732decdaa7">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c0ee6d1f-a336-4a4b-bec1-44732decdaa7">
   <name>кфк_т_ТестовыеДанные</name>
   <synonym>
     <key>ru</key>
     <value>Тестовые данные (Kafka)</value>
   </synonym>
+  <extension xsi:type="mdclassExtension:SubsystemExtension">
+    <commandInterface>Extended</commandInterface>
+  </extension>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <picture xsi:type="core:PictureRef">
@@ -12,9 +15,12 @@
   </picture>
   <content>Catalog.кфк_т_ТестовыйСправочник</content>
   <content>Enum.кфк_т_ТестовоеПеречисление</content>
-  <content>InformationRegister.кфк_т_ТестовыйРегистр</content>
+  <content>InformationRegister.кфк_т_ТестовыйРегистрСведений</content>
   <content>DataProcessor.кфк_т_ГенераторСлучайныхЗначений</content>
   <content>CommonModule.кфк_т_МенеджерОбменаЧерезУниверсальныйФормат</content>
   <content>CommonModule.кфк_т_ТестовыеДанные</content>
+  <content>Document.кфк_т_ТестовыйДокумент</content>
+  <content>InformationRegister.кфк_т_ТестовыйРегистрСведенийПР</content>
+  <content>AccumulationRegister.кфк_т_ТестовыйРегистрНакопления</content>
   <content>XDTOPackage.кфк_т_ФорматОбмена</content>
 </mdclass:Subsystem>

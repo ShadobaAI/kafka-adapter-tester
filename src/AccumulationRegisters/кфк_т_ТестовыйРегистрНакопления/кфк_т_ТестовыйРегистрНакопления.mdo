@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="836a3387-6706-465a-801e-9714f6486c0a">
+  <producedTypes>
+    <selectionType typeId="4a1e4199-2421-4a78-ac97-1d2dd9e7de9b" valueTypeId="7ad94471-f530-46fc-b3cc-ad06535a3271"/>
+    <listType typeId="f5f1c804-f581-4a32-b755-2bbd8d216ffa" valueTypeId="ce051893-bb82-46a4-b1fc-d2ee55f26c08"/>
+    <managerType typeId="6d71c340-9c89-4fbf-b905-c9ae3cfa25ca" valueTypeId="7f4af994-a2b1-43fd-831f-d0997fa90224"/>
+    <recordSetType typeId="f4ca0fbf-3ebb-4133-a61f-53b97aa0bb79" valueTypeId="a9b13246-d7c1-4cc5-b54f-9edc847722c4"/>
+    <recordKeyType typeId="6935ed3a-ea87-4ef8-a976-7668c5fb7c81" valueTypeId="b581e0f4-7791-436d-8b9a-13b83539bf80"/>
+    <recordType typeId="7a144b44-31c1-46c1-a960-0331fa9b8865" valueTypeId="a8e3b5ce-9679-4cfb-85a5-0fc11b980e36"/>
+  </producedTypes>
+  <name>кфк_т_ТестовыйРегистрНакопления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестовый регистр накопления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.кфк_т_ТестовыйРегистрНакопления.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <listPresentation>
+    <key>ru</key>
+    <value>Тестовый регистр накопления</value>
+  </listPresentation>
+  <resources uuid="727adecd-bc29-4444-a376-f62e11d438ba">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="1b9ae363-4702-442f-b4db-b8999656da30">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <forms uuid="d9b42258-e8ad-44d8-9ae7-30b06417e6b8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

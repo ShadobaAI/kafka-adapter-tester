@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71f05931-aced-4b7b-9da5-ac6f0545d6e5">
+  <producedTypes>
+    <objectType typeId="88932732-7a2b-41f7-b2cb-1268fdb2626e" valueTypeId="ce30fd1a-c59f-4ecf-a2c1-2203a3c2f709"/>
+    <refType typeId="f55075da-2f6b-48fd-b07d-fb96941e557b" valueTypeId="d037324a-eda1-44b9-8c76-ce99708c87fc"/>
+    <selectionType typeId="68448411-b354-421e-ba48-c4273ca33c16" valueTypeId="ade81d41-0cd2-4db9-aa1b-e2c4620ec80c"/>
+    <listType typeId="8ca5569a-e60c-4413-9abe-4c96eac842a6" valueTypeId="c2a97251-48a8-4f40-b971-dae519a00764"/>
+    <managerType typeId="7da12b92-903d-424b-9ead-e53b036e7d8d" valueTypeId="5c3f042a-99ab-4a7b-8f68-f48bb44dd1bf"/>
+  </producedTypes>
+  <name>кфк_т_ТестовыйДокумент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестовый документ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.кфк_т_ТестовыйДокумент.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Тестовые документы</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>InformationRegister.кфк_т_ТестовыйРегистрСведенийПР</registerRecords>
+  <registerRecords>AccumulationRegister.кфк_т_ТестовыйРегистрНакопления</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="3883e297-466a-4417-aaf9-409b072cb47b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

@@ -9,15 +9,15 @@
     <recordType typeId="f1dfffb8-63bc-4012-b53d-c740b51734b3" valueTypeId="cc846553-7c55-469e-b7e4-f1bba3c92aeb"/>
     <recordManagerType typeId="656d39fd-ab09-4fa9-bdfb-e887b2eee770" valueTypeId="f67c2473-56b8-4ba3-b6da-7febeba0a3ca"/>
   </producedTypes>
-  <name>кфк_т_ТестовыйРегистр</name>
+  <name>кфк_т_ТестовыйРегистрСведений</name>
   <synonym>
     <key>ru</key>
-    <value>Тестовый регистр</value>
+    <value>Тестовый регистр сведений</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
-  <defaultRecordForm>InformationRegister.кфк_т_ТестовыйРегистр.Form.ФормаЗаписи</defaultRecordForm>
-  <defaultListForm>InformationRegister.кфк_т_ТестовыйРегистр.Form.ФормаСписка</defaultListForm>
+  <defaultRecordForm>InformationRegister.кфк_т_ТестовыйРегистрСведений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.кфк_т_ТестовыйРегистрСведений.Form.ФормаСписка</defaultListForm>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Active</name>
@@ -56,7 +56,7 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <recordPresentation>
     <key>ru</key>
-    <value>Тестовый регистр</value>
+    <value>Тестовый регистр сведений</value>
   </recordPresentation>
   <resources uuid="489ca67a-41f8-46d8-8628-b14e405dd3eb">
     <name>Комментарий</name>

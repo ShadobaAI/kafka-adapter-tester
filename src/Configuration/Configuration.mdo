@@ -47,7 +47,10 @@
   <commonModules>CommonModule.ОбновлениеИнформационнойБазыKafka</commonModules>
   <xDTOPackages>XDTOPackage.кфк_т_ФорматОбмена</xDTOPackages>
   <catalogs>Catalog.кфк_т_ТестовыйСправочник</catalogs>
+  <documents>Document.кфк_т_ТестовыйДокумент</documents>
   <enums>Enum.кфк_т_ТестовоеПеречисление</enums>
   <dataProcessors>DataProcessor.кфк_т_ГенераторСлучайныхЗначений</dataProcessors>
-  <informationRegisters>InformationRegister.кфк_т_ТестовыйРегистр</informationRegisters>
+  <informationRegisters>InformationRegister.кфк_т_ТестовыйРегистрСведений</informationRegisters>
+  <informationRegisters>InformationRegister.кфк_т_ТестовыйРегистрСведенийПР</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.кфк_т_ТестовыйРегистрНакопления</accumulationRegisters>
 </mdclass:Configuration>

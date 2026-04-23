@@ -15,22 +15,35 @@
 		<property name="boolean" type="xs:boolean" nillable="true"/>
 		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="enum" type="d3p1:TestCatalog.Enum" lowerBound="0" nillable="true"/>
 		<property name="comment" type="xs:string" nillable="true"/>
-		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="tabularSection" type="d3p1:TestCatalog.TabularSection" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="tabularSection" type="d3p1:TestCatalog.Tabularsection" lowerBound="0" nillable="true"/>
 	</objectType>
-	<objectType name="TestCatalog.TabularSection.Row">
+	<objectType name="TestCatalog.Tabularsection.Row">
 		<property name="dateTime" type="xs:dateTime" nillable="true"/>
 		<property name="string" type="xs:string" nillable="true"/>
 	</objectType>
-	<objectType name="TestCatalog.TabularSection">
-		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="row" type="d3p1:TestCatalog.TabularSection.Row" upperBound="-1"/>
+	<objectType name="TestCatalog.Tabularsection">
+		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="row" type="d3p1:TestCatalog.Tabularsection.Row" upperBound="-1"/>
 	</objectType>
 	<objectType name="TestRegister">
 		<property name="period" type="xs:dateTime"/>
 		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="testRef" type="d3p1:UUID" nillable="true"/>
 		<property name="boolean" type="xs:boolean" nillable="true"/>
+		<property name="string" type="xs:string" nillable="true"/>
 		<property name="number" type="xs:decimal" nillable="true"/>
 		<property name="dateTime" type="xs:dateTime" nillable="true"/>
 		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="uuid" type="d3p1:UUID" nillable="true"/>
 		<property name="comment" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="TestRegisterRs">
+		<property name="period" type="xs:dateTime"/>
+		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="recorder" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="id" type="d3p1:UUID"/>
+		<property name="value" type="xs:decimal" nillable="true"/>
+	</objectType>
+	<objectType name="TestAccumulationRegister">
+		<property name="period" type="xs:dateTime"/>
+		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="recorder" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.fsk.ru/kfk/test/1.0" name="id" type="d3p1:UUID"/>
+		<property name="value" type="xs:decimal" nillable="true"/>
 	</objectType>
 </package>
